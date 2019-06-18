@@ -3,7 +3,8 @@
 // nav
 const navHover = document.querySelector('nav');
 navHover.addEventListener('mouseover', event => {
-    event.target.style.color = "purple";});
+    event.target.style.color = "purple";
+});
 
 navHover.addEventListener('mouseout', event => {
     event.target.style.color = "";
@@ -13,6 +14,7 @@ const navBorder = document.querySelector('header');
 navBorder.addEventListener('dblclick', event => {
     event.target.style.border = "5px dashed red";
 });
+
 navBorder.addEventListener('click', event => {
     event.target.style.border = "";
 });
@@ -41,7 +43,10 @@ footerP.addEventListener('copy', event => {
     event.clipboardData.setData('text/plain',"Secret words!");
     event.preventDefault();
 });
-
+footerP.addEventListener('cut', event => {
+    event.clipboardData.setData('text/plain', "Still secret!");
+    event.preventDefault();
+});
 
 
 

@@ -20,10 +20,20 @@ orangeTxt.addEventListener('dblclick', event => {
    event.target.style.color = "orange";
 });
 
-const footBold = document.querySelector('footer');
-footBold.addEventListener('select', event => {
+// select
+const footerP = document.querySelector('footer p');
+footerP.addEventListener('select', event => {
     event.target.style.fontStyle = "bold";
+    event.preventDefault();
 });
+footerP.addEventListener('copy', event => {
+    event.clipboardData.setData('text/plain',"Secret words!");
+    event.preventDefault();
+});
+
+
+
+
 
 
 

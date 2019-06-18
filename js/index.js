@@ -8,10 +8,14 @@ navHover.addEventListener('mouseout', event => {
     event.target.style.color = "";
 });
 
-// keydown
-const pressKey = document.querySelector('logo-heading');
-pressKey.addEventListener('keypress', event => {
-   
+// double click
+const purpleTxt = document.querySelector('h2');
+purpleTxt.addEventListener('dblclick', (event) => {
+    event.target.style.backgroundColor = 'purple';
 });
+
+
+
+
 
 

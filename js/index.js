@@ -29,6 +29,7 @@ orangeTxt.addEventListener('dblclick', event => {
    event.target.style.color = "orange";
 });
 
+const footerP = document.querySelector('footer p');
 footerP.addEventListener('copy', event => {
     event.clipboardData.setData('text/plain',"Secret words!");
     event.preventDefault();

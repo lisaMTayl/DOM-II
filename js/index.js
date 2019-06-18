@@ -8,13 +8,16 @@ navHover.addEventListener('mouseout', event => {
     event.target.style.color = "";
 });
 
-// double click
-const purpleTxt = document.querySelector('h2');
-purpleTxt.addEventListener('dblclick', (event) => {
+// right click
+const purpleTxt = document.querySelector('p');
+purpleTxt.addEventListener('contextmenu', (event) => {
     event.target.style.backgroundColor = 'purple';
 });
 
-
+const orangeTxt = document.querySelector('h2');
+orangeTxt.addEventListener('dblclick', event => {
+   event.target.style.color = "orange";
+});
 
 
 

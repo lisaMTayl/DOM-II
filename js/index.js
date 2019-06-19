@@ -1,23 +1,33 @@
 // Your code goes here
-
-
-const navHover = document.querySelector('nav');
-navHover.addEventListener('mouseover', event => {
+const navEffects = document.querySelector('nav');
+navEffects.addEventListener('mouseover', event => {
     event.target.style.color = "purple";
 });
 
-navHover.addEventListener('mouseout', event => {
+navEffects.addEventListener('mouseout', event => {
     event.target.style.color = "";
 });
+
+// navEffects.addEventListener('click', event => {
+//     event.preventDefault();
+// });
 
 const navBorder = document.querySelector('header');
 navBorder.addEventListener('dblclick', event => {
     event.target.style.border = "5px dashed red";
 });
-
 navBorder.addEventListener('click', event => {
     event.target.style.border = "";
 });
+
+const bodyTag = document.querySelector('body');
+bodyTag.addEventListener('dblclick', event => {
+    event.target.style.backgroundColor = "yellow";
+});
+bodyTag.addEventListener('click', event => {
+    event.target.style.backgroundColor = "";
+});
+
 
 const purpleTxt = document.querySelector('p');
 purpleTxt.addEventListener('contextmenu', (event) => {
@@ -50,9 +60,6 @@ inputTxt.addEventListener('select', event => {
 inputTxt.addEventListener('focus', event => {
     event.target.style.backgroundColor = "pink";
 });
-
-
-
 
 
 

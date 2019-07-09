@@ -64,6 +64,8 @@ footerP.addEventListener('paste', event => {
     event.preventDefault();
 });
 
-
-
+// rotate Fun Bus logo on click on bus image
+const rotateLogo = document.querySelector('img');
+rotateLogo.addEventListener('click', event => {TweenMax.to(".logo-heading", 3, {rotation:360})
+});
 

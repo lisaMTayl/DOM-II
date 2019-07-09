@@ -1,3 +1,4 @@
+
 // Your code goes here
 const navEffects = document.querySelector('nav');
 navEffects.addEventListener('mouseover', event => {
@@ -24,9 +25,16 @@ const bodyTag = document.querySelector('body');
 bodyTag.addEventListener('dblclick', event => {
     event.target.style.backgroundColor = "yellow";
 });
+
+bodyTag.addEventListener('auxclick', event => {
+    event.target.style.backgroundColor = "darkPink";
+});
+
 bodyTag.addEventListener('click', event => {
     event.target.style.backgroundColor = "";
 });
+
+
 
 
 const purpleTxt = document.querySelector('p');
@@ -45,22 +53,16 @@ footerP.addEventListener('copy', event => {
     event.preventDefault();
 });
 
+
 footerP.addEventListener('cut', event => {
     event.clipboardData.setData('text/plain', "Still secret!");
     event.preventDefault();
 });
 
-// someday we'll have an input section
-const inputTxt = document.querySelector('input');
-inputTxt.addEventListener('select', event => {
-    event.target.style.fontStyle = "bold";
+footerP.addEventListener('paste', event => {
+    event.clipboardData.setData('text/plain', "Not gonna work, but good try!");
     event.preventDefault();
 });
-
-inputTxt.addEventListener('focus', event => {
-    event.target.style.backgroundColor = "pink";
-});
-
 
 
 
